@@ -1,8 +1,8 @@
 # Use css to bulid some interesting thing.
 
 
-## css case
-[Pic ratation](http://www.javanx.cn/20200615/css-13/)
+## CSS case
+[Pic rotation](http://www.javanx.cn/20200615/css-13/)
 
 ## Tools
 [Turn scss to css](http://jsrun.net/app/scss)
