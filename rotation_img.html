@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .photo {
+            position: absolute;
+            width: 420px;
+            height: 240px;
+            left: 50%;
+            top: 50%;
+            margin-left: -210px;
+            margin-top: -120px;
+            transform-style: preserve-3d;
+            animation: rotateAn 18s ease-in-out infinite 2s;
+        }
+
+        .photo .example {
+            position: absolute;
+            width: 420px;
+            height: 240px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+            bottom: 0;
+            background-color: rgba(253, 121, 168, 0.52);
+        }
+
+        .photo .example:nth-child(1) {
+            transform: rotateY(0) translateZ(500px);
+        }
+
+        .photo .example:nth-child(2) {
+            transform: rotateY(60deg) translateZ(500px);
+        }
+
+        .photo .example:nth-child(3) {
+            transform: rotateY(120deg) translateZ(500px);
+        }
+
+        .photo .example:nth-child(4) {
+            transform: rotateY(180deg) translateZ(500px);
+        }
+
+        .photo .example:nth-child(5) {
+            transform: rotateY(240deg) translateZ(500px);
+        }
+
+        .photo .example:nth-child(6) {
+            transform: rotateY(300deg) translateZ(500px);
+        }
+
+        @keyframes rotateAn {
+            0% {
+                transform: rotateY(0);
+            }
+
+            16.7% {
+                transform: rotateY(60deg);
+            }
+
+            33.3% {
+                transform: rotateY(120deg);
+            }
+
+            50% {
+                transform: rotateY(180deg);
+            }
+
+            66.7% {
+                transform: rotateY(240deg);
+            }
+
+            83.3% {
+                transform: rotateY(300deg);
+            }
+
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+
+        img {
+            width: 420px;
+            /* height: 120px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="photo">
+        <div class="example"><img src="imgs/a.jpg" alt="" srcset=""></div>
+        <div class="example"><img src="imgs/a2.jpg" alt="" srcset=""></div>
+        <div class="example"><img src="imgs/a3.jpg" alt="" srcset=""></div>
+        <div class="example"><img src="imgs/a4.jpg" alt="" srcset=""></div>
+        <div class="example"><img src="imgs/a5.jpg" alt="" srcset=""></div>
+        <div class="example"><img src="imgs/a6.jpg" alt="" srcset=""></div>
+    </div>
+</body>
+
+</html>
